@@ -280,13 +280,7 @@ a = b = c = d = e = 30;
 ### 3.2.1.	คำสั่ง if
 คำสั่ง if เป็นคำสั่งที่นำเงื่อนไขมาใช้ในการตัดสินใจเพื่อเปลี่ยนทิศทางการทำงานของโปรแกรม โดยมีรูปแบบดังต่อไปนี้
 รูปแบบของคำสั่ง if	
-
-```csharp
-if(condition)
-{
-    statements;
-}
-```
+ 
 <!--  code for flowchart.js  
 ``` flow 
 st=>start: ทางเข้าเพียงทางเดียว
@@ -316,14 +310,13 @@ if(condition)
 </tr>
 </table>
 
-<img src = "./images/if.svg" align = "center">
-
-	 
-
-(ก) รูปแบบคำสั่ง	(ข) Flowchart
 ### 3.2.2.	คำสั่ง if…else
 รูปแบบคำสั่งและ Flowchart ของ if…else
 รูปแบบของคำสั่ง if…else
+
+<table>
+<tr> 
+<td valign="center" width = "50%" >
 
 ```csharp
 if(condition)
@@ -331,12 +324,18 @@ if(condition)
     statements;
 }
 ```	 
-
-(ก) รูปแบบคำสั่ง	(ข) Flowchart
+</td>
+<td valign="top" ><img src = "./images/if-else.svg" align = "center"> </p> </td>
+</tr>
+</table>
 
 
 ### 3.2.3.	คำสั่ง if ซ้อนกัน (nested if)
 รูปแบบของคำสั่ง nested if
+
+<table>
+<tr> 
+<td valign="center" width = "50%" >
 
 ```csharp
 if(condition)
@@ -348,11 +347,16 @@ if(condition)
     }
 }
 ```	 
+	 
+</td>
+<td valign="top" ><img src = "./images/nested-if.svg" align = "center"> </p> </td>
+</tr>
+</table>
 
-(ก) รูปแบบคำสั่ง	(ข) Flowchart
 
 ### 3.2.4.	คำสั่ง if…else…if
 รูปแบบของคำสั่ง if…else…if
+
 
 ```csharp
 if (condition)
@@ -370,6 +374,9 @@ else
 }
 
 ``` 
+<img src = "./images/if-else-if.svg" align = "center"> 
+
+
 
 Flowchart ของคำสั่ง if… else…if
 
@@ -393,7 +400,10 @@ switch (variable)
         break;
 }
 ```
- 
+
+<img src = "./images/switch.svg" align = "center"> 
+
+
 Flowchart ของคำสั่ง switch
 ในภาษา C# เราสามารถใช้ค่าคงที่ที่เป็น string ก็ได้ เช่น
 
@@ -414,6 +424,10 @@ switch (day)
 ### 3.3.1 คำสั่ง While
 รูปแบบของคำสั่ง while
 
+<table>
+<tr> 
+<td valign="center" width = "50%" >
+
 ```csharp
 while (condition)
 {
@@ -421,10 +435,21 @@ while (condition)
 }
 ```	 
 
-(ก) รูปแบบคำสั่ง	(ข) Flowchart
+</td>
+<td valign="top" ><img src = "./images/while.svg" align = "center"> </p> </td>
+</tr>
+</table>
+
+
 
 ### 3.3.2.	คำสั่ง do…while
 รูปแบบของคำสั่ง do…while
+
+
+
+<table>
+<tr> 
+<td valign="center" width = "50%" >
 
 ```csharp
 do
@@ -433,6 +458,13 @@ do
 }
 while (condition)
 ```	 
+
+</td>
+<td valign="top" ><img src = "./images/do-while.svg" align = "center"> </p> </td>
+</tr>
+</table>
+
+
 
 (ก) รูปแบบคำสั่ง	(ข) Flowchart
 ### 3.3.3.	คำสั่ง for
@@ -444,21 +476,31 @@ for (initialization; conditional check ; update)
     statements;
 }
 ``` 
-Flowchart ของคำสั่ง for
+
+<img src = "./images/for.svg" align = "center"> 
+
 ### 3.3.4.	คำสั่ง break
+
+<img src = "./images/break.svg" align = "center"> 
  
 ### 3.3.5.	คำสั่ง continue
- 
+
+<img src = "./images/continue.svg" align = "center"> 
+
+
 ### 3.3.6.	คำสั่ง foreach…in
-คำสั่ง foreach…in ใช้สำหรับการวนลูปเพื่อดึงค่าสมาชิกในอาเรย์ออกมาใช้ครั้งละ 1 ตัว โดยชนิดข้อมูลที่ดึงออกมาจะต้งเป็นชนิดเดียวกับสมาชิกในอาเรย์
-รูปแบบของคำสั่ง foreach…in
+คำสั่ง foreach…in ใช้สำหรับการวนลูปเพื่อดึงค่าสมาชิกในอาเรย์ออกมาใช้ครั้งละ 1 ตัว โดยชนิดข้อมูลที่ดึงออกมาจะต้งเป็นชนิดเดียวกับสมาชิกในอาเรย์ 
+
+__รูปแบบของคำสั่ง foreach…in__
 ```csharp
 foreach (var_type var in var_array )
 {
     statements;
 }
 ```
-ตัวอย่างการใช้งานคำสั่ง foreach…in
+
+__ตัวอย่างการใช้งานคำสั่ง foreach…in__
+
 ```csharp
 class Program
 {
@@ -475,11 +517,15 @@ class Program
 
 # 4.	ตัวดำเนินการ (Operators)
 ตัวดำเนินการในภาษา C# ส่วนใหญ่จะเหมือนกับตัวดำเนินการในภาษา C และ C++ แต่จะมีบางตัวที่เพิ่มความรัดกุมในการตรวจสอบขณะใช้งาน เช่น เครื่องหมาย = ซึ่งใช้ในการกำหนดค่าและ == ที่ใช้ในการเปรียบเทียบ
+
 ## 4.1.	ตัวดำเนินการกำหนดค่า (Assignment Operators)
 ตัวดำเนินการกำหนดค่า มีหน้าที่กำหนด rvalue ให้กับ lvalue
  
+<img src = "./images/assignment.svg" align = "center"> 
+
 ## 4.2.	ตัวดำเนินการทางคณิตศาสตร์ (Methematical Operators)
 ภาษา C# มีตัวดำเนินการทางคณิตศาสตร์ทั้งหมด 5 ตัว ประกอบด้วยการกระทำทางคณิตศาสตร์ 4 ตัว ได้แก่การบวก (+) ลบ (-) คูณ (*) หาร (/) และตัวดำเนินการพิเศษที่ใช้หาค่าเศษจากการหารอีก 1 ตัว เรียกว่า modulo ใช้เครื่องหมาย % ในการดำเนินการ
+
 ## 4.3.	ตัวดำเนินการเพิ่มค่า/ลดค่า ครั้งละ 1 หน่วย (Incremental/Decremental)
 ตัวดำเนินการเพิ่มค่า/ลดค่าในภาษา C# มีลักษณะการใช้งานเช่นเดียวกับภาษา C นั่นคือใช้เครื่องหมาย ++ สำหรับการเพิ่มค่า และเครื่องหมาย -- สำหรับการลดค่าที่เก็บในตัวแปรขึ้นหรือลงครั้งละ 1 หน่วย ตัวอย่างเช่น
 ```csharp
@@ -487,6 +533,7 @@ int a = 10;
 a++;
 ```
 หลังจากดำเนินการแล้วจะได้ a = 11
+
 ## 4.4.	ตัวดำเนินการเพิ่ม/ลดค่า (Calculate & reassign operator)
 ตัวดำเนินการนี้จะต่างจาก Incremental/Decremental เนื่องจากเราสามารถระบุค่าที่ต้องการปรับปรุงลงไปในสมการ และสามารถใช้ตัวดำเนินการทางคณิตศาสตร์และตรรกะได้ด้วย ตัวดำเนินการนี้จะทำการคำนวณแล้วนำค่าที่ได้ใส่กลับลงไปในตัวแปรเดิม ดังตัวอย่าง
 
@@ -502,7 +549,8 @@ mySalary *= 1.10d;
 นอกจากนี้เราสามารถใช้ตัวดำเนินการต่างๆ มาประกอบเป็น Calculate & reassign operator ได้ เช่น +=, -=, *=, /=, %= 
 ## 4.5.	Prefix/Postfix operator
 ตัวดำเนินการ Incremental/Decremental สามารถวางไว้ได้ทั้งด้านหน้าและด้านหลังตัวแปร ซึ่งลักษณะการวางทั้งสองตำแหน่งจะให้ผลในการดำเนินการที่แตกต่างกัน ดังตัวอย่าง
-ตัวอย่าง Prefix:
+
+__ตัวอย่าง Prefix:__
 
 ```csharp
 int firstValue = 10;
@@ -511,6 +559,8 @@ firstValue = secondValue++;
 Console.WriteLine("{0},{1}", firstValue, secondValue);
 ``` 
 Output:
+
+<img src = "./images/output-prefix.png" align = "center"> 
 
 ตัวอย่าง Postfix:
 
@@ -522,7 +572,9 @@ Console.WriteLine("{0},{1}", firstValue, secondValue);
 ```
 
 Output:
- 
+
+ <img src = "./images/output-postfix.png" align = "center"> 
+
 ## 4.6.	ตัวดำเนินการเปรียบเทียบ (Relational Operators)
 ตัวดำเนินการเปรียบเทียบ ใช้เปรียบเทียบค่า 2 ค่า อาจจะเป็นตัวแปรหรือค่าคงที่ต่างๆ ก็ได้ แล้วให้ผลการเปรียบเทียบเป็นชนิด boolean (true หรือ false) เท่านั้น ซึ่งผลจากการเปรียบเทียบอาจนำไปใช้กับคำสั่งเปลี่ยนทิศทางการดำเนินงานของโปรแกรม 
 ตัวอย่าง เมื่อกำหนดให้ bigValue = 100 และ smallValue = 50
