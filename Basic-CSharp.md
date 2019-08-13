@@ -18,35 +18,41 @@ Identifier จะมีลักษณะที่เรียกว่า case 
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
  
  
-```
-abstract        as          base        bool        break       byte
-case            catch       char        checked     class       const   
-continue        decimal     default     delegate    do          double      
-else            enum        event       explicit    extern	    false	
-finally	        fixed	    float	    for	        foreach	    goto
-if	            implicit	in	        int	        interface	internal	
-is	            lock	    long	    namespace	new	        null	    
-object	        operator	out	        override	params	    private	
-protected	    public	    readonly	ref	        return	    sbyte
-sealed	        short	    sizeof	    stackalloc	static	    string	
-struct	        switch	    this	    throw	    true	    try	        
-typeof	        uint	    ulong	    unchecked	unsafe	    ushort	
-using	        using       static	    virtual	    void	    volatile	
-while		
-```
+|||||||
+|--|--|--|--|--|--|
+| abstract | as | base | bool | break | byte |
+| case | catch | char | checked | class | const |
+| continue | decimal | default | delegate | do | double |
+| else |  enum | event | explicit | extern | false |	
+| finally |  fixed | float | for | foreach | goto |
+| if | implicit | in | int | interface | internal |
+| is | lock | long | namespace | new | null |
+| object | operator | out | override | params | private |	
+| protected | public | readonly	ref | return | sbyte |
+| sealed | short | sizeof | stackalloc | static | string |
+| struct | switch | this | throw | true | try |
+| typeof | uint | ulong | unchecked | unsafe | ushort |
+| using | using | static | virtual | void | volatile |
+| while|||||||
+
 
 ## 1.3 Contextual keywords
 Contextual keywords จัดเป็น identifiers แต่มีการใช้งานเหมือนคำสงวน เป็นคำที่ใช้ในตำแหน่งเดียวกับคำสงวนของภาษา มันไม่ใช่คำสงวนและไม่สามารถใช้เป็นชื่อหรือ identifier ได้ ดังตารางต่อไปนี้
 
-```
-add	        alias	    ascending       async	    await	by
-descending	dynamic	    equals          from	    get	    global
-group	    into	    join            let	        nameof	on
-orderby	partial (type)	partial (method)            remove	select	
-set         value	    var	            when (filter condition)
-where (generic type constraint)	        where (query clause)	
-yield
-```
+
+|||||||
+|--|--|--|--|--|--|
+| add | alias | ascending 
+| async | await | by |
+| descending | dynamic | equals  | 
+| from | get | global | 
+| group | into | join |             
+| let | nameof | on | 
+| orderby | partial (type)	 | partial (method)  
+| remove| select |  set |
+| value | var | when (filter condition) |
+| where (generic type constraint)	 |where (query clause) | yield |
+
 
 
 ## 1.4 อักษรว่าง Whitespace 
@@ -204,20 +210,6 @@ a = b = c = d = e = 30;
 คำสั่ง if เป็นคำสั่งที่นำเงื่อนไขมาใช้ในการตัดสินใจเพื่อเปลี่ยนทิศทางการทำงานของโปรแกรม โดยมีรูปแบบดังต่อไปนี้
 รูปแบบของคำสั่ง if	
  
-<!--  code for flowchart.js  
-``` flow 
-st=>start: ทางเข้าเพียงทางเดียว
-e=>end: ทางออกเพียงทางเดียว
-op1=>operation: Statements
-sub1=>subroutine: My Subroutine
-cond=>condition: Yes or No?
-st->cond
-cond(yes)->op1->e
-cond(no)->e
-```
--->
-
-
 <table>
 <tr> 
 <td valign="center" width = "50%" >
@@ -229,7 +221,7 @@ if(condition)
 }
 ```
 </td>
-<td valign="top" ><img src = "./images/if.svg" align = "center"> </p> </td>
+<td valign="top" ><img src = "./images/iF.svg" align = "center"> </p> </td>
 </tr>
 </table>
 
