@@ -237,7 +237,7 @@ cond(no)->e
 ```csharp
 if(condition)
 {
-statements;
+    statements;
 }
 ```	 
 
@@ -429,50 +429,52 @@ int secondValue = 20;
 firstValue = ++secondValue;
 Console.WriteLine("{0},{1}", firstValue, secondValue);
 ```
+
 Output:
  
 ## 4.6.	ตัวดำเนินการเปรียบเทียบ (Relational Operators)
 ตัวดำเนินการเปรียบเทียบ ใช้เปรียบเทียบค่า 2 ค่า อาจจะเป็นตัวแปรหรือค่าคงที่ต่างๆ ก็ได้ แล้วให้ผลการเปรียบเทียบเป็นชนิด boolean (true หรือ false) เท่านั้น ซึ่งผลจากการเปรียบเทียบอาจนำไปใช้กับคำสั่งเปลี่ยนทิศทางการดำเนินงานของโปรแกรม 
 ตัวอย่าง เมื่อกำหนดให้ bigValue = 100 และ smallValue = 50
-ชื่อ	ตัวดำเนินการ	ตัวอย่าง	ผลที่ได้
-Equals  	==	bigValue == 100 
-bigValue == 80	true 
-false
-Not equals  	!=	bigValue != 100
-bigValue != 80	false
-true
-Greater than	> 	bigValue > smallValue  	true
-Greater than or equals	>=	bigValue >= smallValue
-smallValue >= bigValue	true
-false
-Less than	<	bigValue < smallValue	false
-Less than or equals	<=	smallValue <= bigValue
-bigValue <= smallValue	true
-false
+
+| ชื่อ	| ตัวดำเนินการ	| ตัวอย่าง	| ผลที่ได้
+|:---|:--:|:--|--|
+|Equals |  	==	|bigValue == 100| true  
+|||bigValue == 80	|false   |
+| Not equals | 	!=	| bigValue != 100 |false| 
+|||bigValue != 80|true|
+|Greater than	|> 	|bigValue   > smallValue | 	true|
+|Greater than or equals	|>=	|bigValue >= smallValue|true| 
+|||smallValue >= bigValue| false|
+|Less than	|<	|bigValue < smallValue	|false
+|Less than or equals|	<=	|smallValue <= bigValue|true
+|||bigValue <= smallValue| false|
 
 ## 4.7.	Operator Precedence
 
-ประเภท 
-(ตามลำดับความสำคัญ)	ตัวดำเนินการ	ลำดับการกระทำ
-Primary	x.y    f(x)    a[x]    x++    x--    new    typeof    default    checked    unchecked    delegate	left
-Unary	+    -    !    ~    ++x    --x    (T)x	right
-Multiplicative	*    /    %	left
-Additive	+    -	left
-Shift	<<    >>	left
-Relational	<    >    <=    >=    is    as	left
-Equality	==    !=	right
-Logical AND	&	left
-Logical XOR	^	left
-Logical OR	|	left
-Conditional AND	&&	left
-Conditional OR	||	left
-Null Coalescing	??	left
-Ternary	?:	right
-Assignment	=    *=    /=    %=    +=    -=    <<=    >>=    &=    ^=    |=    =>	right
+|ประเภท (ตามลำดับความสำคัญ)	|ตัวดำเนินการ	|ลำดับการกระทำ|
+|---|---|---|
+|Primary	|x.y    f(x)    a[x]    x++    x--    new    typeof    default    checked    unchecked    delegate	|left|
+|Unary	|+    -    !    ~    ++x    --x    (T)x	right
+|Multiplicative|	*    /    %	left
+|Additive|	+    -	left
+|Shift|	<<    >>	left
+|Relational|	<    >    <=    >=    is    as	left
+|Equality|	==    !=	right
+|Logical AND|	&	|left
+|Logical XOR|	^	|left
+|Logical OR|	\|	|left
+|Conditional AND|	&&	|left
+|Conditional OR|	\|\|	|left
+|Null Coalescing|	??	|left
+|Ternary|	?:	|right
+|Assignment|	=    *=    /=    %=    +=    -=    <<=    >>=    &=    ^=    |=    =>	|right
 
 ## 4.8.	The ternary operator
 ตัวดำเนินการพิเศษตัวหนึ่งในภาษา C# เรียกว่า ternary operator ประกอบด้วยเครื่องหมาย 2 ตัว คือ ? และ : โดยมีรูปแบบการใช้งานคือ 
+
+```csharp
 cond-expr  ? expr1  : expr2
+```
 การทำงานของตัวดำเนินการนี้จะเริ่มจากการพิจารณา cond-expr หน้าเครื่องหมาย ? ซึ่งต้องให้ผลลัพธ์เป็นชนิด boolean เท่านั้น ถ้าผลลัพธ์เป็น true จะทำงานในคำสั่ง expr1 ถ้าเป็น false จะทำงานในคำสั่ง expr2
 
 # 5.	อื่นๆ / Advanced features
