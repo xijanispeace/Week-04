@@ -239,7 +239,7 @@ if(condition)
 ```
 
 </td>
-<td valign="top"><img src = "./images/iF.svg" align = "center"> </p> </td>
+<td valign="top"><img src = "./images/if.svg" align = "center"> </p> </td>
 </tr>
 </table>
 
