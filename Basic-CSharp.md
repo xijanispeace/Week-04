@@ -29,7 +29,7 @@ Identifier จะมีลักษณะที่เรียกว่า case 
 | if | implicit | in | int | interface | internal |
 | is | lock | long | namespace | new | null |
 | object | operator | out | override | params | private |
-| protected | public | readonly	ref | return | sbyte |
+| protected | public | readonly ref | return | sbyte |
 | sealed | short | sizeof | stackalloc | static | string |
 | struct | switch | this | throw | true | try |
 | typeof | uint | ulong | unchecked | unsafe | ushort |
@@ -89,7 +89,7 @@ System.Console.WriteLine("The value of var1 is {0}", var1);
 
 ## 1.6 Block
 
-บล็อกอาจจะว่างเปล่าหรือประกอบด้วย statements ตั้งแต่หนึ่ง statement ขึ้นไป โดยขอบเขตของบล็อกเป็นเครื่องหมายวงเล็บปีกกา 
+บล็อกอาจจะว่างเปล่าหรือประกอบด้วย statements ตั้งแต่หนึ่ง statement ขึ้นไป โดยขอบเขตของบล็อกเป็นเครื่องหมายวงเล็บปีกกา
 
 ```csharp
 {
@@ -124,10 +124,10 @@ __ตัวแปรหรือวัตถุในหน่วยความ
 |bool |  8 | true และ false|
 
 ## 2.2 ชนิดข้อมูลตัวเลข (Integer Types)
- 
+
 ในภาษา C# ชนิดข้อมูลตัวเลข เป็นหมวดของชนิดข้อมูลตัวเลขจำนวนเต็ม ทั้ง `signed`, `unsigned`, รวมถึงข้อมูลตัวอักษร (`char`) ซึ่ง Unicode character
 
-| ชนิด | ขนาด (บิต)	|ขอบเขตการเก็บข้อมูล|
+| ชนิด | ขนาด (บิต) |ขอบเขตการเก็บข้อมูล|
 |:-----|:------------:|:---------------|
 |Sbyte | 8 |-128 ถึง 127 |
 |Byte | 8 |0 ถึง 255 |
@@ -151,7 +151,7 @@ __ตัวแปรหรือวัตถุในหน่วยความ
 | double | 64 |15-16 | 5.0 x 10-324 ถึง 1.7 x 10308
 | decimal  | 128 |28-29 | 1.0 x 10-28 ถึง 7.9 x 1028
 
-## 2.4 	ข้อความ (String Type)
+## 2.4 ข้อความ (String Type)
 
 ข้อความ (`String`) เป็นอักขระ (`Char`) ที่เขียนเรียงต่อกันเป็นข้อความ ในบางกรณีเราต้องการใช้งานตัวอักษรที่ไม่สามารถพิมพ์ออกหน้าจอ (หรือไม่ได้อยู่บนแป้นพิมพ์) ในภาษา C# ก็อนุญาตให้ใช้อักขระเหล่านั้นโดยเขียนนำหน้าด้วยเครื่องหมาย '\' เรียกว่า `Escape Sequence`
 
@@ -175,7 +175,7 @@ __ตัวแปรหรือวัตถุในหน่วยความ
 
 ## 2.6 Enumeration
 
-Enumerations เป็นวิธีการหนึ่ง ในการใช้ค่าคงที่ได้อย่างมีประสิทธิภาพ โดยการตั้งชื่อเรียกให้กับกลุ่มของค่าคงที่อย่างเป็นระบบ (เรียกว่า enumerator list) 
+Enumerations เป็นวิธีการหนึ่ง ในการใช้ค่าคงที่ได้อย่างมีประสิทธิภาพ โดยการตั้งชื่อเรียกให้กับกลุ่มของค่าคงที่อย่างเป็นระบบ (เรียกว่า enumerator list)
 ตัวอย่าง
 
 ```csharp
@@ -228,7 +228,7 @@ a = b = c = d = e = 30;
 รูปแบบของคำสั่ง if
 
 <table>
-<tr> 
+<tr>
 <td valign="center" width = "50%">
 
 ```csharp
@@ -249,7 +249,7 @@ if(condition)
 รูปแบบของคำสั่ง if…else
 
 <table>
-<tr> 
+<tr>
 <td valign="center" width = "50%" >
 
 ```csharp
@@ -269,7 +269,7 @@ if(condition)
 รูปแบบของคำสั่ง nested if
 
 <table>
-<tr> 
+<tr>
 <td valign="center" width = "50%" >
 
 ```csharp
@@ -302,7 +302,7 @@ else if (condition)
     statements;
 }
 ...
-else 
+else
 {
     statements;
 }
@@ -315,7 +315,7 @@ else
 
 รูปแบบของคำสั่ง switch
 
-```csharp 
+```csharp
 switch (variable)
 {
     case constant_1:
@@ -358,7 +358,7 @@ switch (day)
 รูปแบบของคำสั่ง while
 
 <table>
-<tr> 
+<tr>
 <td valign="center" width = "50%" >
 
 ```csharp
@@ -378,7 +378,7 @@ while (condition)
 รูปแบบของคำสั่ง do…while
 
 <table>
-<tr> 
+<tr>
 <td valign="center" width = "50%" >
 
 ```csharp
@@ -387,7 +387,7 @@ do
     statements;
 }
 while (condition)
-```	 
+```  
 
 </td>
 <td valign="top" ><img src = "./images/do-while.svg" align = "center"> </p> </td>
@@ -453,7 +453,6 @@ class Program
 ตัวดำเนินการกำหนดค่า มีหน้าที่กำหนด rvalue ให้กับ lvalue
 
 ![assignment operator](./images/assignment.svg)
-
 
 ## 4.2 ตัวดำเนินการทางคณิตศาสตร์ (Methematical Operators)
 
@@ -544,7 +543,7 @@ Output:
 |Unary |+    -    !    ~    ++x    --x    (T)x  | right |
 |Multiplicative| *    /    %  | left |
 |Additive| +    -  | left |
-|Shift|	<<    >>	 | left |
+|Shift| <<    >>  | left |
 |Relational| <    >    <=    >=    is    as | left |
 |Equality| ==    != | right |
 |Logical AND| & | left |
