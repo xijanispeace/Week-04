@@ -15,19 +15,37 @@ Identifier จะมีลักษณะที่เรียกว่า case 
 ## 1.2 คำสงวน (Keywords) 
 คำสงวน ไม่สามารถนำมาใช้เป็นชื่อตัวแปรหรือ identifier ใดๆ ได้ ยกเว้นว่าจะใส่เครื่องหมาย @ ไว้ข้างหน้า โดยคำสงวนทุกคำในภาษา C# จะเป็นตัวพิมพ์เล็กทั้งคำ ยกเว้นชนิดข้อมูลใน .NET จะใช้หลักการตั้งชื่อแบบ Pascal casing ตารางด้านล่างนี้คือคำสงวนในภาษา C#
 
-``abstract
-const	extern	int	out	short	typeof
-as	continue	false	interface	override	sizeof	uint
-base	decimal	finally	internal	params	stackalloc	ulong
-bool	default	fixed	is	private	static	unchecked
-break	delegate	float	lock	protected	string	unsafe
-byte	do	for	long	public	struct	ushort
-case	double	foreach	namespace	readonly	switch	using
-catch	else	goto	new	ref	this	virtual
-char	enum	if	null	return	throw	void
-checked	event	implicit	object	sbyte	true	volatile
-class	explicit	in	operator	sealed	try	while
-``
+
+|abstract|  
+|const 
+|extern
+|int
+|out
+|short
+|typeof
+|as	
+|continue	
+|false
+|interface
+|override
+|sizeof
+|uint | 
+|base 
+|decimal	
+|finally
+|internal
+|params
+|stackalloc
+|ulong
+|bool|	default|	fixed|	is|	private|	static|	unchecked|
+|break|	delegate|	float|	lock|	protected|	string|	unsafe|
+|byte|	do	|for|	long|	public|	struct|	ushort|
+|case|	double|	foreach|	namespace|	readonly|	switch|	using|
+|catch|	else|	goto|	new|	ref|	this|	virtual|
+|char|	enum|	if|	null|	return|	throw|	void|
+|checked|	event|	implicit|	object|	sbyte|	true|	volatile|
+|class|	explicit|	in|	operator|	sealed|	try|	while|
+
 
 ## 1.3 Contextual keywords
 Contextual keywords จัดเป็น identifiers แต่มีการใช้งานเหมือนคำสงวน เป็นคำที่ใช้ในตำแหน่งเดียวกับคำสงวนของภาษา มันไม่ใช่คำสงวนและไม่สามารถใช้เป็นชื่อหรือ identifier ได้ ดังตารางต่อไปนี้
@@ -176,3 +194,13 @@ a = b = c = d = e = 30;
 ## 2.8.	คำสั่ง (Statement)
 ในภาษา C# เราเรียกคำสั่งที่ทำงานได้โดยสมบูรณ์ว่า statement ซึ่งอาจเป็นประโยคกำหนดค่าหรือประโยคที่เรียกใช้ฟังก์ชันต่างๆ ก็ได้ โดยคำสั่งจะถูกเรียกทำงานตามลำดับจากบนลงล่าง ตามที่เราเขียนลงไปใน source code  
 
+``` flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
