@@ -15,125 +15,48 @@ Identifier จะมีลักษณะที่เรียกว่า case 
 ## 1.2 คำสงวน (Keywords) 
 คำสงวน ไม่สามารถนำมาใช้เป็นชื่อตัวแปรหรือ identifier ใดๆ ได้ ยกเว้นว่าจะใส่เครื่องหมาย @ ไว้ข้างหน้า โดยคำสงวนทุกคำในภาษา C# จะเป็นตัวพิมพ์เล็กทั้งคำ ยกเว้นชนิดข้อมูลใน .NET จะใช้หลักการตั้งชื่อแบบ Pascal casing ตารางด้านล่างนี้คือคำสงวนในภาษา C#
 
-|keywords| ความหมาย|
-|--|--|
-|abstract||  
-|const ||
-|extern||
-|int||
-|out||
-|short||
-|typeof||
-|as	||
-|continue||	
-|false||
-|interface||
-|override||
-|sizeof||
-|uint || 
-|base ||
-|decimal||	
-|finally||
-|internal||
-|params||
-|stackalloc||
-|ulong||
-|bool||
-|default||
-|fixed||
-|is||
-|private||
-|static||
-|unchecked||
-|break||
-|delegate||
-|float||
-|lock||
-|protected||
-|string||
-|unsafe||
-|byte||
-|do||
-|for||
-|long||
-|public||
-|struct||
-|ushort||
-|case||
-|double||
-|foreach||
-|namespace||
-|readonly||
-|switch||
-|using||
-|catch||
-|else||
-|goto||
-|new||
-|ref||
-|this||
-|virtual||
-|char||
-|enum||
-|if||
-|null||
-|return||
-|throw||
-|void||
-|checked||
-|event||
-|implicit||
-|object||
-|sbyte||
-|true||
-|volatile||
-|class||
-|explicit||
-|in||
-|operator||
-|sealed||
-|try||
-|while||
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
  
+ 
+```
+abstract        as          base        bool        break       byte
+case            catch       char        checked     class       const   
+continue        decimal     default     delegate    do          double      
+else            enum        event       explicit    extern	    false	
+finally	        fixed	    float	    for	        foreach	    goto
+if	            implicit	in	        int	        interface	internal	
+is	            lock	    long	    namespace	new	        null	    
+object	        operator	out	        override	params	    private	
+protected	    public	    readonly	ref	        return	    sbyte
+sealed	        short	    sizeof	    stackalloc	static	    string	
+struct	        switch	    this	    throw	    true	    try	        
+typeof	        uint	    ulong	    unchecked	unsafe	    ushort	
+using	        using       static	    virtual	    void	    volatile	
+while		
+```
 
 ## 1.3 Contextual keywords
 Contextual keywords จัดเป็น identifiers แต่มีการใช้งานเหมือนคำสงวน เป็นคำที่ใช้ในตำแหน่งเดียวกับคำสงวนของภาษา มันไม่ใช่คำสงวนและไม่สามารถใช้เป็นชื่อหรือ identifier ได้ ดังตารางต่อไปนี้
-|keywords| ความหมาย|
-|--|--|
-|add||
-| ascending||
-| async||
-| await||
-| by||
-| descending||
-| dynamic||
-| equals||
-| from||
-| get||
-| global||
-| group||
-| in||
-| into||
-| join||
-| let||
-| on||
-| orderby||
-| partial||
-| remove||
-| select||
-| set||
-| value||
-| var||
-| where||
-| yield ||
+
+```
+add	        alias	    ascending       async	    await	by
+descending	dynamic	    equals          from	    get	    global
+group	    into	    join            let	        nameof	on
+orderby	partial (type)	partial (method)            remove	select	
+set         value	    var	            when (filter condition)
+where (generic type constraint)	        where (query clause)	
+yield
+```
 
 
 ## 1.4 อักษรว่าง Whitespace 
 อักษรว่างในโปรแกรมคืออักษรที่มองไม่เห็นเป็นรูปแบบของตัวอักษร (เป็นช่องว่าง) อักษรว่างในโปรแกรมจะถูกมองข้ามโดยคอมไพลเลอร์ โดยประกอบด้วยอักษรต่อไปนี้   
-•	`Space`   
-•	Tab   
-•	New line   
-•	Carriage return  
+
+* Space   
+* Tab   
+* New line   
+* Carriage return  
+
 ในภาษา C# นั้น เรามีอิสระที่จะจัดวางอักษรต่างๆ ไว้ที่ตำแหน่งใดก็ได้ โดยคอมไพเลอร์จะพิจารณาการจบบรรทัดด้วยเครื่องหมาย `;` และขอบเขตของบล็อกด้วยเครื่องหมายวงเล็บปีกกา `{` และ `}`
 
 ```csharp
