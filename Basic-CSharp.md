@@ -194,13 +194,19 @@ a = b = c = d = e = 30;
 ## 2.8.	คำสั่ง (Statement)
 ในภาษา C# เราเรียกคำสั่งที่ทำงานได้โดยสมบูรณ์ว่า statement ซึ่งอาจเป็นประโยคกำหนดค่าหรือประโยคที่เรียกใช้ฟังก์ชันต่างๆ ก็ได้ โดยคำสั่งจะถูกเรียกทำงานตามลำดับจากบนลงล่าง ตามที่เราเขียนลงไปใน source code  
 
-``` flow
-st=>start: Start
-e=>end
-op=>operation: My Operation
+<!--  code for flowchart.js  
+``` flow 
+st=>start: ทางเข้าเพียงทางเดียว
+e=>end: ทางออกเพียงทางเดียว
+op1=>operation: Statements
+sub1=>subroutine: My Subroutine
 cond=>condition: Yes or No?
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
+st->cond
+cond(yes)->op1->e
+cond(no)->e
 ```
+-->
+
+<img src = "./images/if.svg" align = "center">
+
+ 
