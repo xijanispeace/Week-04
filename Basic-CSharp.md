@@ -229,7 +229,7 @@ a = b = c = d = e = 30;
 คำสั่ง if เป็นคำสั่งที่นำเงื่อนไขมาใช้ในการตัดสินใจเพื่อเปลี่ยนทิศทางการทำงานของโปรแกรม โดยมีรูปแบบดังต่อไปนี้
 รูปแบบของคำสั่ง if
 
-<table>
+<table align = "center">
 <tr>
 <td valign="center" width = "50%">
 
@@ -250,7 +250,7 @@ if(condition)
 รูปแบบคำสั่งและ Flowchart ของ if…else
 รูปแบบของคำสั่ง if…else
 
-<table>
+<table align = "center">
 <tr>
 <td valign="center" width = "50%" >
 
