@@ -89,7 +89,7 @@ namespace Lab01
 ➢ รันโปรแกรมและบันทึกผล
 
 ```text
-
+![](images/w)
 
 
 
