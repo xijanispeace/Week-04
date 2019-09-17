@@ -90,7 +90,7 @@ namespace Lab01
 ➢ รันโปรแกรมและบันทึกผล
 
 
-![](images/Lab02.png)
+![](images/Lab02.PNG)
 
 
 
