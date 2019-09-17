@@ -64,8 +64,7 @@ namespace Lab01
 
 
 
-<img src="./images/Lab01.PNG"> </p>
-
+![](images/Lab0.PNG)
 
 
 
@@ -130,7 +129,7 @@ namespace Lab01
 
 
 
-![](images/Lab03.png)
+![](images/Lab03.PNG)
 
 
 
@@ -155,7 +154,7 @@ namespace Lab01
 
 
 
-![](images/Lab04.png)
+![](images/Lab04.PNG)
 
 
 
@@ -200,7 +199,7 @@ namespace Lab01
 
 ➢ รันโปรแกรมและบันทึกผล
 
-![](images/Lab05.png)
+![](images/Lab05.PNG)
 
 👉 แก้โปรแกรมตามรูปด้านล่างนี้
 
@@ -220,7 +219,7 @@ namespace Lab01
 
 ➢ รันโปรแกรมและบันทึกผล
 
-![](images/Lab06.png)
+![](images/Lab06.PNG)
 
 ❔ เครื่องหมาย { } ในคำสั่ง Console.WriteLine() มีลักษณะการใช้งานอย่างไร
 
@@ -263,7 +262,7 @@ namespace Lab01
 
 
 
-![](images/Lab07.png)
+![](images/Lab07.PNG)
 
 
 
@@ -299,7 +298,7 @@ namespace Lab01
 
 
 
-![](images/Lab08.png)
+![](images/Lab08.PNG)
 
 
 
@@ -341,7 +340,7 @@ namespace Lab01
 
 
 
-![](images/Lab09.png)
+![](images/Lab09.PNG)
 
 
 
