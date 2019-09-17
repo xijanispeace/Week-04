@@ -64,7 +64,7 @@ namespace Lab01
 
 
 
-<p align="center">  <img src="./images/Lab01.png"> </p>
+<img src="./images/Lab01.PNG"> </p>
 
 
 
