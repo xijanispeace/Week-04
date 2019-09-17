@@ -64,7 +64,7 @@ namespace Lab01
 
 
 
-![](images/Lab01.png)
+<p align="center">  <img src="./images/Lab01.png"> </p>
 
 
 
