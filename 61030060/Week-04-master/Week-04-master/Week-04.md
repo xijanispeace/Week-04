@@ -417,17 +417,16 @@ namespace Lab01
 
 
 ```
-
-## ❔ แบบฝึกหัด จงระบุ output ของบรรทัดคำสั่งต่อไปนี้
+ ❔ แบบฝึกหัด จงระบุ output ของบรรทัดคำสั่งต่อไปนี้
 
 ``` csharp
 1. string name = "Hello";
     Console.WriteLine(String.Format("{0} there. I said {0}! {0}???", name));
-    <p align="center">  <img src="./01.PNG"> </p>
-```
+    
+<p align="center">  <img src="./01.PNG"> </p>
 
 
-``` csharp
+ csharp
 2. Console.WriteLine("{2:d} {0:d} {1:d}", 1, 2, 3);
 <p align="center">  <img src="./02.PNG"> </p>
 ```
@@ -440,8 +439,9 @@ namespace Lab01
 
 ``` csharp
 4. Console.WriteLine("Here comes a slash \\");
+
 <p align="center">  <img src="./04.PNG"> </p>
-```
+
 
 ``` csharp
 5. Console.WriteLine("|{0, 10}|", 999);
@@ -530,7 +530,7 @@ namespace Lab01
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` <p align="center">  <img src="./016.PNG"> </p>
+ <p align="center">  <img src="./016.PNG"> </p>
 
 
 
@@ -547,8 +547,7 @@ Error เพราะ char รับค่าได้แค่ 1ตัวอั
 ```
 
 ❔ ในบรรทัดซึ่งมีโปรแกรมเป็น ch = (char)Console.Read(); นั้น ถ้าตัด (char) ออกไป จะเกิดอะไรขึ้น ให้อธิบายประกอบ
-
-```Error เพราะค่าที่ได้เป็นstringเก็บไว้ในตัวแปลcharไม่ได้
+Error เพราะค่าที่ได้เป็นstringเก็บไว้ในตัวแปลcharไม่ได้
 
 
 
@@ -610,7 +609,7 @@ namespace Lab01
 
 ➢ รันโปรแกรม โดยป้อนตัวเลขใดๆ และบันทึกผลที่ได้
 
-```<p align="center">  <img src="./018.PNG"> </p>
+<p align="center">  <img src="./018.PNG"> </p>
 
 
 
@@ -619,7 +618,7 @@ namespace Lab01
 
 ❔ ถ้าเราป้อนตัวอักษรลงไปแทนที่ตัวเลข จะเกิดอะไรขึ้น มีวิธีการป้องกันหรือแก้ไขอย่างไร
 
-```Error สร้างloopตรวจสอบมาทับว่าเป็นตัวเลขหรือไม่
+Error สร้างloopตรวจสอบมาทับว่าเป็นตัวเลขหรือไม่
 
 
 
@@ -659,7 +658,7 @@ namespace Lab01
 
 ➢ รันโปรแกรม โดยป้อนตัวเลขใดๆ และบันทึกผล
 
-```<p align="center">  <img src="./019.PNG"> </p>
+<p align="center">  <img src="./019.PNG"> </p>
 
 
 
@@ -668,7 +667,7 @@ namespace Lab01
 
 ❔ ถ้าเราป้อนตัวอักษรลงไปแทนที่ตัวเลข จะเกิดอะไรขึ้น เหมือนหรือต่างจากโปรแกรมก่อนหน้านี้อย่างไร
 
-```Error :(ตัวอักษที่พิม) ต่างเพราะมี่ การป้องกันโดยใช้ประโยค `try{…}` `catch{…}` 
+Error :(ตัวอักษที่พิม) ต่างเพราะมี่ การป้องกันโดยใช้ประโยค `try{…}` `catch{…}` 
 
 
 
