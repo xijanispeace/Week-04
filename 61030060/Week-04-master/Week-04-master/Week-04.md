@@ -530,7 +530,7 @@ namespace Lab01
 
 ➢ รันโปรแกรมและบันทึกผล
 
- <p align="center">  <img src="./016.PNG"> </p>
+``` <p align="center">  <img src="./016.PNG"> </p>
 
 
 
