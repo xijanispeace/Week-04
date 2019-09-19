@@ -128,7 +128,7 @@ namespace Lab01
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
+<p align="center">  <img src="./3.PNG"> </p>
 
 
 
