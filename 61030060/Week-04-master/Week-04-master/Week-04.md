@@ -154,7 +154,7 @@ namespace Lab01
 
 ➢ รันโปรแกรมและบันทึกผล
 
-```text
+<p align="center">  <img src="./4.PNG"> </p>
 
 
 
