@@ -888,7 +888,7 @@ namespace thruthTable
 
 ➢ รันโปรแกรมและบันทึกผล
 
-```text
+<p align="center">  <img src="./001.PNG"> </p>
 
 
 
@@ -932,8 +932,7 @@ public class intergerTest
 
 ➢ รันโปรแกรมและบันทึกผล
 
-```  text
-
+<p align="center">  <img src="./002.PNG"> </p>
 
 
 
@@ -994,7 +993,7 @@ namespace variableProperties
 
 ➢ รันโปรแกรมและบันทึกผล
 
-```text
+<p align="center">  <img src="./003.PNG"> </p>
 
 
 
@@ -1042,7 +1041,7 @@ public class MathTest
 
 ➢ รันโปรแกรมและบันทึกผล
 
-```text
+<p align="center">  <img src="./004.PNG"> </p>
 
 
 
