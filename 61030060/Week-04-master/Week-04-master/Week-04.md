@@ -100,7 +100,7 @@ namespace Lab01
 
 ❔ ผลที่ได้จากการทดลอง เป็นอย่างที่นักศึกษาคิดหรือไม่ อย่างไร จงอธิบาย
 
-``` text
+การใช้เมนู Debug -> Start Without Debugging (Ctrl+F5)ทำให้หน้าconsoleยังค้างอยู่
 
 
 
