@@ -423,54 +423,69 @@ namespace Lab01
 ``` csharp
 1. string name = "Hello";
     Console.WriteLine(String.Format("{0} there. I said {0}! {0}???", name));
+    <p align="center">  <img src="./01.PNG"> </p>
 ```
+
 
 ``` csharp
 2. Console.WriteLine("{2:d} {0:d} {1:d}", 1, 2, 3);
+<p align="center">  <img src="./02.PNG"> </p>
 ```
+
 
 ``` csharp
 3. Console.WriteLine("Hello " + "World");
+<p align="center">  <img src="./03.PNG"> </p>
 ```
 
 ``` csharp
 4. Console.WriteLine("Here comes a slash \\");
+<p align="center">  <img src="./04.PNG"> </p>
 ```
 
 ``` csharp
 5. Console.WriteLine("|{0, 10}|", 999);
+<p align="center">  <img src="./05.PNG"> </p>
 ```
 
 ``` csharp
 6. Console.WriteLine("|{0,-10}|", 000);
+<p align="center">  <img src="./06.PNG"> </p>
 ```
 
 ``` csharp
 7. Console.WriteLine("The value: {0}.", 500);
+<p align="center">  <img src="./07.PNG"> </p>
 ```
 
 ``` csharp
 8. Console.WriteLine("The value: {0:C}.", 500);
+<p align="center">  <img src="./08.PNG"> </p>
 ```
 
 ``` csharp
 9. Console.WriteLine("{0,-10:F4}", 12.3456789);
+<p align="center">  <img src="./09.PNG"> </p>
 ```
 
 ``` csharp
 10. Console.WriteLine("{0,-10:C}", 12.3456789);
+<p align="center">  <img src="./010.PNG"> </p>
 ```
 
 ``` csharp
 11. Console.WriteLine("{0,-10:E3}", 12.3456789);
+<p align="center">  <img src="./011.PNG"> </p>
 ```
 
 ``` csharp
 12. Console.WriteLine("{0,-10:x}", 65535);  // (x = lower case)
+<p align="center">  <img src="./012.PNG"> </p>
 ```
 
 ``` csharp
 13. Console.WriteLine("{0,-10:X}", 65535);  // (X = upper case)
+<p align="center">  <img src="./013.PNG"> </p>
 ```
 
 ``` csharp
@@ -478,10 +493,12 @@ namespace Lab01
     Console.WriteLine("Value\tSquared\tCubed");
     for(i = 1; i < 10; i++)
         Console.WriteLine("{0}\t{1}\t{2}", i, i*i, i*i*i);
+        <p align="center">  <img src="./014.PNG"> </p>
 ```
 
 ``` csharp
 15. Console.WriteLine("{0:#.###}.", 1234.56789);
+<p align="center">  <img src="./015.PNG"> </p>
 ```
 
 ## การใช้งานคำสั่ง Console.Read() และ Console.ReadLine()
@@ -513,7 +530,7 @@ namespace Lab01
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
+``` <p align="center">  <img src="./016.PNG"> </p>
 
 
 
@@ -522,8 +539,8 @@ namespace Lab01
 
 ❔ ถ้าพิมพ์ตัวอักษรจำนวนหลายๆ ตัวแล้วกด Enter จะได้ผลอย่างไร ทำไมจึงเป็นเช่นนั้น
 
-```text
-
+```
+Error เพราะ char รับค่าได้แค่ 1ตัวอักษร
 
 
 
@@ -531,7 +548,7 @@ namespace Lab01
 
 ❔ ในบรรทัดซึ่งมีโปรแกรมเป็น ch = (char)Console.Read(); นั้น ถ้าตัด (char) ออกไป จะเกิดอะไรขึ้น ให้อธิบายประกอบ
 
-```text
+```Error เพราะค่าที่ได้เป็นstringเก็บไว้ในตัวแปลcharไม่ได้
 
 
 
@@ -561,7 +578,7 @@ namespace Lab01
 
 ➢ รันโปรแกรมและบันทึกผล
 
-```text
+```<p align="center">  <img src="./017.PNG"> </p>
 
 
 
@@ -593,7 +610,7 @@ namespace Lab01
 
 ➢ รันโปรแกรม โดยป้อนตัวเลขใดๆ และบันทึกผลที่ได้
 
-```text
+```<p align="center">  <img src="./018.PNG"> </p>
 
 
 
@@ -602,7 +619,7 @@ namespace Lab01
 
 ❔ ถ้าเราป้อนตัวอักษรลงไปแทนที่ตัวเลข จะเกิดอะไรขึ้น มีวิธีการป้องกันหรือแก้ไขอย่างไร
 
-```text
+```Error สร้างloopตรวจสอบมาทับว่าเป็นตัวเลขหรือไม่
 
 
 
@@ -642,7 +659,7 @@ namespace Lab01
 
 ➢ รันโปรแกรม โดยป้อนตัวเลขใดๆ และบันทึกผล
 
-```text
+```<p align="center">  <img src="./019.PNG"> </p>
 
 
 
@@ -651,7 +668,7 @@ namespace Lab01
 
 ❔ ถ้าเราป้อนตัวอักษรลงไปแทนที่ตัวเลข จะเกิดอะไรขึ้น เหมือนหรือต่างจากโปรแกรมก่อนหน้านี้อย่างไร
 
-```text
+```Error :(ตัวอักษที่พิม) ต่างเพราะมี่ การป้องกันโดยใช้ประโยค `try{…}` `catch{…}` 
 
 
 
