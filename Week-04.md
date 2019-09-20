@@ -153,7 +153,6 @@ namespace Lab01
 ➢ รันโปรแกรมและบันทึกผล
 
 
-
 ![](images/Lab04.PNG)
 
 
@@ -417,66 +416,107 @@ namespace Lab01
 1. string name = "Hello";
     Console.WriteLine(String.Format("{0} there. I said {0}! {0}???", name));
 ```
-
+```Text
+   Hello there. I said Hello! Hello???
+``` 
 ``` csharp
 2. Console.WriteLine("{2:d} {0:d} {1:d}", 1, 2, 3);
 ```
-
+```Text
+   3 2 1
+```
 ``` csharp
 3. Console.WriteLine("Hello " + "World");
 ```
-
+```Text
+   Hello World
+```
 ``` csharp
 4. Console.WriteLine("Here comes a slash \\");
 ```
-
+```Text
+   Here comes a slash \\
+```
 ``` csharp
 5. Console.WriteLine("|{0, 10}|", 999);
 ```
-
+```Text
+   |        999|
+```
 ``` csharp
 6. Console.WriteLine("|{0,-10}|", 000);
 ```
-
+```Text
+   |000       |
+```
 ``` csharp
 7. Console.WriteLine("The value: {0}.", 500);
 ```
-
+```Text
+   The value: 500
+```
 ``` csharp
 8. Console.WriteLine("The value: {0:C}.", 500);
 ```
-
+```Text
+   The value  : $500
+```
 ``` csharp
 9. Console.WriteLine("{0,-10:F4}", 12.3456789);
 ```
-
+```Text
+   12.3457
+```
 ``` csharp
 10. Console.WriteLine("{0,-10:C}", 12.3456789);
 ```
-
+```Text
+   $12.35
+```
 ``` csharp
 11. Console.WriteLine("{0,-10:E3}", 12.3456789);
 ```
-
+```Text
+   1.235E+001
+```
 ``` csharp
 12. Console.WriteLine("{0,-10:x}", 65535);  // (x = lower case)
 ```
-
+```Text
+   ffff
+```
 ``` csharp
 13. Console.WriteLine("{0,-10:X}", 65535);  // (X = upper case)
 ```
-
+```Text
+   FFFF
+```
 ``` csharp
 14. int i;
     Console.WriteLine("Value\tSquared\tCubed");
     for(i = 1; i < 10; i++)
         Console.WriteLine("{0}\t{1}\t{2}", i, i*i, i*i*i);
 ```
+```Text
+   Value   squard  cubed
+       1       1       1
+       2       4       8
+       3       9       27  
+       4       16      24
+       5       25      125
+       6       36      216
+       7       49      343
+       8       64      512
+       9       81      729
 
+```
 ``` csharp
 15. Console.WriteLine("{0:#.###}.", 1234.56789);
 ```
 
+```Text
+1234.568.
+``` 
 ## การใช้งานคำสั่ง Console.Read() และ Console.ReadLine()
 
 ### ความรู้เบื้องต้น
@@ -517,7 +557,7 @@ namespace Lab01
 
 ```text
 
-
+จะแสดงตัวอักษร ตัวแรกเท่านั้น เนื่องจากตัวแปร เป็นชนิด char 
 
 
 ```
@@ -526,7 +566,7 @@ namespace Lab01
 
 ```text
 
-
+เกิด error ขึ้นทำให้โปรแกรมไม่สามารถทำงานได้ เนื่องจากตัว char นั้นถูกนำออกไป 
 
 
 ```
@@ -597,7 +637,7 @@ namespace Lab01
 
 ```text
 
-
+จะเกิด error ขึ้นในการดำเนิดการโปรแกรม
 
 
 ```
@@ -646,7 +686,7 @@ namespace Lab01
 
 ```text
 
-
+จะเกิด error ขึ้นทำให้โปรแกรมไม่สามารถดำเนิดการต่อไปได้
 
 
 ```
@@ -875,6 +915,91 @@ namespace thruthTable
 5. `NOR`
 6. `Exclusive OR`
 
+```csharp
+using System;
+public class intergerTest
+{
+    static void Main(string[] args)
+    {
+        bool A, B, Y;
+            Console.WriteLine("      Y = A AND B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("\n      Y = A OR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("\n      Y = A NOT B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A \t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; Y = true;
+            Console.WriteLine(" {0}\t| {1}", A, Y);
+            A = true; Y = false;
+            Console.WriteLine(" {0}\t| {1}", A, Y);
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("      Y = A NAND B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = !(A & B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = !(A & B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = !(A & B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = !(A & B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("\n      Y = A NOR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = !(A | B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = !(A | B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = !(A | B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = !(A | B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("      Y = A XOR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+    }
+}
+```
+
 ## ชนิดข้อมูลตัวเลขจำนวนเต็ม (Integer Types)
 
 ข้อมูลชนิดตัวเลขจำนวนเต็ม สามารถนำไปใช้งานได้หลากหลาย เช่น การนับหรือแสดงจำนวน การกำหนดลำดับที่ การจัดลำดับ เป็นต้น ค่าที่ใส่ลงในตัวแปร เป็นได้ทั้งค่าบวก ค่าศูนย์ และค่าลบ (มีตัวแปรบางชนิดที่เก็บเฉพาะค่าบวกเพียงอย่างเดียว) การกำหนดค่าใดๆ ให้กับตัวแปร ทำได้โดยการใช้เครื่องหมาย =
@@ -985,6 +1110,61 @@ namespace variableProperties
 | Neptune | 4,501,000,000 km | |
 | Pluto | 5,945,900,000 km | |
 
+```csharp
+using System;
+namespace variableProperties
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const long merc = 57910000;
+            const long ven = 108200000;
+            const long eath = 149600000;
+            const long mars = 227330000;
+            const long jup = 778330000;
+            const long ura = 2873550000;
+            const long nep = 4501000000;
+            const long pluto = 5945900000;
+            const double AU = 6.684587123e-9;
+            const double lm = 8.317;
+            Console.Write("Mercury");
+            Console.WriteLine("Distance from the sun : {0, 0:n} KM", merc);
+            Console.WriteLine("Distance of A.U>      : {0, 0:n10} AU", AU * merc);
+            Console.WriteLine("light-minute          : {0, 0:n10} light minute", ((AU * merc) * lm));
+            Console.WriteLine("Venus");
+            Console.WriteLine("Distance from the sun : {0, 0:n} KM", ven);
+            Console.WriteLine("Distance of A.U>      : {0, 0:n10} AU", AU * ven);
+            Console.WriteLine("light-minute          : {0, 0:n10} light minute", ((AU * ven) * lm));
+            Console.WriteLine("Earth");
+            Console.WriteLine("Distance from the sun : {0, 0:n} KM", eath);
+            Console.WriteLine("Distance of A.U>      : {0, 0:n10} AU", AU * eath);
+            Console.WriteLine("light-minute          : {0, 0:n10} light minute", ((AU * eath) * lm));
+            Console.WriteLine("Mars");
+            Console.WriteLine("Distance from the sun : {0, 0:n} KM", mars);
+            Console.WriteLine("Distance of A.U>      : {0, 0:n10} AU", AU * mars);
+            Console.WriteLine("light-minute          : {0, 0:n10} light minute", ((AU * mars) * lm));
+            Console.WriteLine("Jupiter");
+            Console.WriteLine("Distance from the sun : {0, 0:n} KM", jup);
+            Console.WriteLine("Distance of A.U>      : {0, 0:n10} AU", AU * jup);
+            Console.WriteLine("light-minute          : {0, 0:n10} light minute", ((AU * jup) * lm));
+            Console.WriteLine("Uranus");
+            Console.WriteLine("Distance from the sun : {0, 0:n} KM", ura);
+            Console.WriteLine("Distance of A.U>      : {0, 0:n10} AU", AU * ura);
+            Console.WriteLine("light-minute          : {0, 0:n10} light minute", ((AU * ura) * lm));
+            Console.WriteLine("Neptune");
+            Console.WriteLine("Distance from the sun : {0, 0:n} KM", nep);
+            Console.WriteLine("Distance of A.U>      : {0, 0:n10} AU", AU * nep);
+            Console.WriteLine("light-minute          : {0, 0:n10} light minute", ((AU * nep) * lm));
+            Console.WriteLine("Pluto");
+            Console.WriteLine("Distance from the sun : {0, 0:n} KM", pluto);
+            Console.WriteLine("Distance of A.U>      : {0, 0:n10} AU", AU * pluto);
+            Console.WriteLine("light-minute          : {0, 0:n10} light minute", ((AU * pluto) * lm));
+        }
+    }
+}
+```
+
 ### คลาส Math ในภาษา C# มีคลาสที่เป็นตัวช่วยคำนวณทางคณิตศาสตร์ ที่ช่วยให้เราสามารถคำนวณฟังก์ชันพื้นฐานได้ อย่างรวดเร็ว ไม่ต้องพัฒนาโปรแกรมเพิ่มเติมด้วยเอง นั่นคือคลาส Math ฟังก์ชันทางคณิตศาสตร์ที่ใช้บ่อยๆ สามารถดูรายละเอียดทั้งหมดได้จาก `system.math`
 
 ## 20.  โปรแกรมพล็อตรูป sine wave บนหน้าจอ
@@ -1023,5 +1203,73 @@ public class MathTest
 👷 ให้ดัดแปลงโปรแกรมเพื่อวาดรูปคลื่นดังต่อไปนี้
 
 1. ``y = x2``
+
+```csharp
+using System;
+public class MathTest
+{
+    static void Main(string[] args)
+    {
+        for (float i = -6; i < Math.PI * 2.0F; i += 0.3F)
+        {
+            Console.WriteLine("The Palabola of {0,10:F} = {1,-10:F6}" + spaces(Math.Pow(i,2)) + "*", i, Math.Pow(i,2));
+        }
+    }
+    private static string spaces(double val)
+    {
+        string SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+        return SpaceString;
+    }
+}
+```
+
 2. ``y = cos(x)``
+
+```csharp
+using System;
+public class MathTest
+{
+    static void Main(string[] args)
+    {
+        for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
+        {
+            Console.WriteLine("The sine of {0,10:F} = {1,-10:F6}" + spaces(Math.Cos(i)) + "*", i, Math.Cos(i));
+        }
+    }
+    private static string spaces(double val)
+    {
+        string SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+        return SpaceString;
+    }
+}
+```
+
 3. ``y = tan(x)``
+
+```csharp
+using System;
+public class MathTest
+{
+    static void Main(string[] args)
+    {
+        for (float i = -3; i < (Math.PI); i += 0.3F){
+                {
+                    Console.WriteLine("The sine of {0,10:F} = {1,-10:F6}" + spaces(Math.Tan(i)) + "*", i, Math.Tan(i));
+                }
+        }
+    }
+    private static string spaces(double val)
+    {
+        string SpaceString;
+        try
+        {
+            SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+        }
+        catch (ArgumentException)
+        {
+            return " ";
+        }
+        return SpaceString;
+    }
+}
+```
