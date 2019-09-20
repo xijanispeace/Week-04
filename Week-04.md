@@ -1037,3 +1037,6 @@ public class MathTest
 ![](image/Capture1.PNG)
 
 3. ``y = tan(x)``
+
+![](image/Capture3.PNG)
+
