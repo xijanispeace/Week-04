@@ -65,7 +65,7 @@ namespace Lab01
 
 
 
-![](image/1.PNG)
+![](./image/1.PNG)
 
 
 
@@ -88,8 +88,7 @@ namespace Lab01
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
-![](image/2.PNG)
-
+![](./image/2.PNG)
 
  
 
@@ -130,7 +129,7 @@ namespace Lab01
 
  
 
-![](images/Lab03.PNG)
+![](./image/3.PNG)
 
 
 
@@ -155,7 +154,7 @@ namespace Lab01
 
  
 
-![](images/Lab04.PNG)
+![](image/4.PNG)
 
 
 
@@ -251,7 +250,7 @@ namespace Lab01
 
  
 
-![](images/Lab07.PNG)
+![](image/7.PNG)
 
 
 
@@ -287,7 +286,7 @@ namespace Lab01
 
  
 
-![](images/Lab08.PNG)
+![](image/8.PNG)
 
 
 
@@ -329,7 +328,7 @@ namespace Lab01
 
  
 
-![](images/Lab09.PNG)
+![](image/9.PNG)
 
 
 
@@ -362,7 +361,7 @@ namespace Lab01
 
  
 
-![](images/Lab10.PNG)
+![](image/10.PNG)
 
 
 
@@ -395,7 +394,7 @@ namespace Lab01
 
 
 
-![](images/Lab11.PNG)
+![](image/11.PNG)
 
 
 
@@ -406,30 +405,35 @@ namespace Lab01
 1. string name = "Hello";
     Console.WriteLine(String.Format("{0} there. I said {0}! {0}???", name));
 ```
+![](image/1.1.PNG)
 ```Text
    Hello there. I said Hello! Hello???
 ``` 
 ``` csharp
 2. Console.WriteLine("{2:d} {0:d} {1:d}", 1, 2, 3);
 ```
+![](image/2.2.PNG)
 ```Text
    3 2 1
 ```
 ``` csharp
 3. Console.WriteLine("Hello " + "World");
 ```
+![](image/3.3.PNG)
 ```Text
    Hello World
 ```
 ``` csharp
 4. Console.WriteLine("Here comes a slash \\");
 ```
+![](image/4.4.PNG)
 ```Text
    Here comes a slash \\
 ```
 ``` csharp
 5. Console.WriteLine("|{0, 10}|", 999);
 ```
+![](image/5.5.PNG)
 ```Text
    |        999|
 ```
@@ -439,48 +443,56 @@ namespace Lab01
 ```Text
    |000       |
 ```
+![](image/6.6.PNG)
 ``` csharp
 7. Console.WriteLine("The value: {0}.", 500);
 ```
 ```Text
    The value: 500
 ```
+![](image/7.7.PNG)
 ``` csharp
 8. Console.WriteLine("The value: {0:C}.", 500);
 ```
 ```Text
    The value  : $500
 ```
+![](image/8.8.PNG)
 ``` csharp
 9. Console.WriteLine("{0,-10:F4}", 12.3456789);
 ```
 ```Text
    12.3457
 ```
+![](image/9.9.PNG)
 ``` csharp
 10. Console.WriteLine("{0,-10:C}", 12.3456789);
 ```
 ```Text
    $12.35
 ```
+![](image/10.10.PNG)
 ``` csharp
 11. Console.WriteLine("{0,-10:E3}", 12.3456789);
 ```
 ```Text
    1.235E+001
 ```
+![](image/11.11.PNG)
 ``` csharp
 12. Console.WriteLine("{0,-10:x}", 65535);  // (x = lower case)
 ```
 ```Text
    ffff
 ```
+![](image/12.12.PNG)
 ``` csharp
 13. Console.WriteLine("{0,-10:X}", 65535);  // (X = upper case)
 ```
 ```Text
    FFFF
 ```
+![](image/13.13.PNG)
 ``` csharp
 14. int i;
     Console.WriteLine("Value\tSquared\tCubed");
@@ -500,6 +512,7 @@ namespace Lab01
        9       81      729
 
 ```
+![](image/14.14.PNG)
 ``` csharp
 15. Console.WriteLine("{0:#.###}.", 1234.56789);
 ```
@@ -507,6 +520,7 @@ namespace Lab01
 ```Text
    1234.568.
 ``` 
+![](image/15.15.PNG)
 ## การใช้งานคำสั่ง Console.Read() และ Console.ReadLine()
 
 ### ความรู้เบื้องต้น
@@ -539,7 +553,7 @@ namespace Lab01
  
 
 
-![](images/Lab12.PNG)
+![](image/12.PNG)
 
 
 
@@ -588,7 +602,7 @@ namespace Lab01
  
 
 
-![](images/Lab13.PNG)
+![](image/13.PNG)
 
 
  
@@ -620,7 +634,7 @@ namespace Lab01
 
  
 
-![](images/Lab14.PNG)
+![](image/14.PNG)
 
 
 
@@ -671,7 +685,7 @@ namespace Lab01
 
 
 
-![](images/Lab15.PNG)
+![](image/15.PNG)
 
 
 
@@ -895,7 +909,7 @@ namespace thruthTable
  
 
 
-![](images/Lab16.PNG)
+![](image/16.PNG)
 
 
  
@@ -1024,7 +1038,7 @@ public class intergerTest
  
 
 
-![](images/Lab17.PNG)
+![](image/17.PNG)
 
 
 
@@ -1086,7 +1100,7 @@ namespace variableProperties
  
 
 
-![](images/Lab18.PNG)
+![](image/18.PNG)
 
 
 
@@ -1189,9 +1203,44 @@ public class MathTest
 
  
 
-![](images/Lab19.PNG)
+![](image/19.PNG)
 
 
 
 👷 ให้ดัดแปลงโปรแกรมเพื่อวาดรูปคลื่นดังต่อไปนี้
  
+ตารางที่ 1 ระยะทางจากดวงอาทิตย์ถึงดาวเคราะห์ต่างๆ
+
+| ดาวเคราะห์ | ระยะทางจากดวงอาทิตย์ | ระยะทางในหน่วย A.U. | เวลาของแสง (นาที)
+|---|---|---|---|
+| Mercury | 57,910,000 km |331 |5.183
+| Venus | 108,200,000 km |581 |9.683
+| Earth | 149,600,000 km |804|13.4
+| Mars | 227,940,000 km |1225|20.146
+| Jupiter |  227,940,000 km |1225 |20.146
+| Uranus | 2,873,550,000 km |15449|257.483
+| Neptune | 4,501,000,000 km |24198|403.3
+| Pluto | 5,945,900,000 km |31967|532.783
+
+### คลาส Math ในภาษา C# มีคลาสที่เป็นตัวช่วยคำนวณทางคณิตศาสตร์ ที่ช่วยให้เราสามารถคำนวณฟังก์ชันพื้นฐานได้ อย่างรวดเร็ว ไม่ต้องพัฒนาโปรแกรมเพิ่มเติมด้วยเอง นั่นคือคลาส Math ฟังก์ชันทางคณิตศาสตร์ที่ใช้บ่อยๆ สามารถดูรายละเอียดทั้งหมดได้จาก `system.math`
+
+## 20.  โปรแกรมพล็อตรูป sine wave บนหน้าจอ
+
+👉 ให้เขียนโปรแกรมต่อไปนี้
+![](image/Capture.PNG)
+```csharp
+using System;
+public class MathTest
+{
+    static void Main(string[] args)
+    {
+        for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
+        {
+            Console.WriteLine("The sine of {0,10:F} = {1,-10:F6}" + spaces(Math.Sin(i)) + "*", i, Math.Sin(i));
+        }
+    }
+    private static string spaces(double val)
+    {
+        string SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+        return SpaceString;
+    }
