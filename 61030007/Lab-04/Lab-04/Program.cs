@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab_04
+﻿
+using System;
+public class MathTest
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
         {
-            string str;
-            Console.Write("Please enter value 1 : ");
-            int val1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(val1);
-
+            Console.WriteLine("The sine of {0,10:F} = {1,-10:F6}" + spaces(Math.Sin(i)) + "*", i, Math.Sin(i));
         }
     }
+    private static string spaces(double val)
+    {
+        string SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+        return SpaceString;
+        Console.ReadKey();
     }
-
+    
+}
