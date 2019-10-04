@@ -4,22 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-<<<<<<< HEAD
-    <ProjectGuid>{2C7F03C3-C707-4B39-A24B-8A82701B3FC5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Lab01</RootNamespace>
-    <AssemblyName>Lab01</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-=======
     <ProjectGuid>{C41C3B50-E0C4-406E-A049-96F89F6525D4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Lab01</RootNamespace>
     <AssemblyName>Lab01</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
->>>>>>> upstream/master
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
