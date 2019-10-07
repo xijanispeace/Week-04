@@ -429,3 +429,8 @@ healthchecksdb
 __pycache__/
 *.pyc
 >>>>>>> upstream/master
+lab01/Lab01/Properties/AssemblyInfo.cs
+lab01/Lab01/Program.cs
+lab01/Lab01/Lab01.csproj
+lab01/Lab01/App.config
+lab01/Lab01.sln
